@@ -1,0 +1,5 @@
+f __name__ == '__main__':
+    n = int(raw_input())
+    arr = map(int, raw_input().split())
+    first = max(arr) 
+    print(max(list(filter(lambda a: a != first, arr))))

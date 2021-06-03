@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+from collections import OrderedDict
+
+Order = OrderedDict()
+for _ in range(int(input())):
+    item, space, price = input().rpartition(' ')
+    Order[item] = Order.get(item, 0) + int(price)
+for item, price in Order.items():
+    print(item, price)
